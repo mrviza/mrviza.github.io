@@ -230,6 +230,7 @@ button {
   font: inherit;
   color: inherit;
   background-color: transparent;
+  outline: inherit;
   cursor: pointer;
 }
 
@@ -1514,6 +1515,113 @@ html {
   margin-top: 100px;
   z-index: 2;
   right: 30px;
+}
+
+.slide5_title {
+  font-family: "Cormorant Unicase", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 72px;
+  line-height: 87px;
+  color: #F8F8F8;
+}
+
+.slide5__flex__vertical {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.slide5__flex__horizontal {
+  margin-top: 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 90%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.slide5_cost1, .slide5_cost2, .slide5_cost3 {
+  font-family: "Cormorant SC", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 29px;
+  color: #F8F8F8;
+  width: 30%;
+}
+
+.slide5_cost1 {
+  text-align: left;
+}
+
+.slide5_cost2 {
+  text-align: center;
+}
+
+.slide5_cost3 {
+  text-align: right;
+}
+
+.slide5_item__fh {
+  margin-top: 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 300%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  overflow: hidden;
+}
+
+.slide5_item1, .slide5_item2, .slide5_item3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  justify-items: center;
+}
+
+.slide5_item1_logo, .slide5_item2_logo, .slide5_item3_logo {
+  -o-object-fit: contain;
+     font-family: "object-fit:contain";
+     object-fit: contain;
+}
+
+.slide5_item1_price, .slide5_item2_price, .slide5_item3_price {
+  font-family: "Cormorant Unicase", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 144px;
+  line-height: 174px;
+  text-align: center;
+  color: #F8F8F8;
+}
+
+.slide5_item1_text, .slide5_item2_text, .slide5_item3_text {
+  font-family: "Cormorant Garamond", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+  color: #F8F8F8;
 }
 
 @media (min-width: 576px) {
