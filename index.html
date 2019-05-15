@@ -153,23 +153,23 @@
       if (current < target) {
         console.log(current, target);
         let timer = setInterval(function() {
-          current += 0.01;
+          current += 0.3;
           toChangeTranslate(current);
           console.log(current, target);
           if (current >= target) {
             clearInterval(timer);
           };
-        }, 20);
+        }, 1);
       } else if (current > target) {
         console.log(current, target);
         let timer = setInterval(function() {
-          current -= 0.1;
+          current -= 0.3;
           toChangeTranslate(current);
           console.log(current, target);
           if (current <= target) {
             clearInterval(timer);
           };
-        }, 20);
+        }, 1);
       };
     }
 
