@@ -1624,6 +1624,122 @@ html {
   color: #F8F8F8;
 }
 
+.slide6_title {
+  font-family: "Cormorant Unicase", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 72px;
+  line-height: 87px;
+  color: #F8F8F8;
+}
+
+.slide6_textbox {
+  width: 80%;
+  margin-top: 10%;
+}
+
+.slide6_textbox_text {
+  font-family: "Cormorant Garamond", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 29px;
+  color: #F8F8F8;
+  padding-bottom: 29px;
+}
+
+.slide6_textbox_text :last-child {
+  padding-bottom: 0px;
+}
+
+.slide6__flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.slide7_title {
+  font-family: "Cormorant Unicase", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 72px;
+  line-height: 87px;
+  color: #F8F8F8;
+}
+
+.slide7__flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.slide7_textbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 80%;
+  margin-top: 10%;
+}
+
+.slide7_textbox_text {
+  font-family: "Cormorant Garamond", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 29px;
+  color: #F8F8F8;
+  width: 50%;
+  text-align: left;
+}
+
+.slide7_textbox_form {
+  font-family: "Cormorant Garamond", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  color: #000000;
+  background-color: #E5E5E5;
+  width: 50%;
+  text-align: center;
+  margin-bottom: 5%;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: none;
+}
+
+.slide7_textbox_button {
+  font-family: "Cormorant Garamond", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 50px;
+  color: #F8F8F8;
+  background-color: #3E0043;
+  border: 1px solid #E5E5E5;
+  width: 30%;
+}
+
 @media (min-width: 576px) {
   .container {
     max-width: 540px;

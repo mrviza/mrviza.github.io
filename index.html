@@ -88,9 +88,9 @@
                   Стоимость
                 </div>
                 <div class="slide5__flex__horizontal" data-swiper-parallax="-1800" data-swiper-parallax-duration='1000'>
-                  <button class="slide5_cost1" style='font-weight: bold' onclick="toChangeToCost1()">Портрет на улице</button>
-                  <button class="slide5_cost2" onclick="toChangeToCost2()">Портрет в фотостудии</button>
-                  <button class="slide5_cost3" onclick="toChangeToCost3()">Репортаж</button>
+                  <button class="slide5_cost1" style='font-weight: bold'>Портрет на улице</button>
+                  <button class="slide5_cost2">Портрет в фотостудии</button>
+                  <button class="slide5_cost3">Репортаж</button>
                 </div>
                 <div class="slide5_item__fh" style='transform: translateX(33.3%)'>
                   <div class="slide5_item1" data-swiper-parallax="-1800" data-swiper-parallax-duration='1000'>
@@ -130,10 +130,49 @@
               </div>
             </div>
             <div class="swiper-slide bg_slide__viol main-slide">
-
+              <div class="slide_header__viol" data-swiper-parallax="-600" data-swiper-parallax-duration='1000'>
+                Арина Феникс
+              </div>
+              <div class="slide6__flex">
+                <div class="slide6_title" data-swiper-parallax="-1200" data-swiper-parallax-duration='1000'>
+                  Как проходит фотосессия
+                </div>
+                <div class='slide6_textbox' data-swiper-parallax="-1800" data-swiper-parallax-duration='1000'>
+                  <p class="slide6_textbox_text">
+                    В любом виде съёмок самое важное — искренность и живые эмоции.
+                  </p>
+                  <p class="slide6_textbox_text">
+                    Для портретной съёмки, как правило, клиент присылает примеры того, что он хочет получить в итоге. Если нет конкретных примеров — говорит о цели съёмки и ожидаемом эмоциональном характере. Затем мы договариваемся о локации, образе и дате проведения. Обычно переписку ведём ВКонтакте, но возможны другие варианты связи.
+                  </p>
+                  <p class="slide6_textbox_text">
+                    Во время съёмки я предпочитаю включать плейлист с любимой музыкой клиента. Обычно процесс проходит весело и интересно. Даже без бухлишка. С позированием помогу.
+                  </p>
+                  <p class="slide6_textbox_text">
+                    Репортажную съёмку я могу проводить только в хорошо освещённых помещениях, так как у меня нет вспышки. Желательно, чтобы клиент разрешил мне заранее посетить место съёмки. Это поможет заранее выбрать наиболее подходящий объектив и даст понимание лучших ракурсов для съёмки. */
+                  </p>
+                </div>
+              </div>
             </div>
             <div class="swiper-slide bg_slide__viol main-slide">
-
+              <div class="slide_header__viol" data-swiper-parallax="-600" data-swiper-parallax-duration='1000'>
+                Арина Феникс
+              </div>
+              <div class="slide7__flex">
+                <div class="slide7_title" data-swiper-parallax="-1200" data-swiper-parallax-duration='1000'>
+                  Хочешь съёмку?
+                </div>
+                <form name='contact' class='slide7_textbox' data-swiper-parallax="-1800" data-swiper-parallax-duration='1000'>
+                  <p class="slide7_textbox_text">Вид съемки</p>
+                  <input type='text' name='form1' class="slide7_textbox_form">
+                  <p class="slide7_textbox_text">Желаемая дата</p>
+                  <input type='text' name='form2' class="slide7_textbox_form">
+                  <p class="slide7_textbox_text">Ваше имя</p>
+                  <input type='text' name='form3' class="slide7_textbox_form">
+                  <p class="slide7_textbox_text">Контактный телефон</p>
+                  <input type='text' name='form4' class="slide7_textbox_form">
+                  <button class="slide7_textbox_button">Отправить!</button>
+                </form>
+              </div>
             </div>
           </div>
         </div>
@@ -144,60 +183,7 @@
   <script src="js/vendors.script.min.js"></script>
   <script src="js/main.script.min.js"></script>
   <script src="js/script.min.js"></script>
-  <script>
-    function toChangeTranslate(translate) {
-      document.querySelector('.slide5_item__fh').style.transform = `translateX(${translate}%)`;
-    }
 
-    function toMoveSlide(current, target) {
-      if (current < target) {
-        console.log(current, target);
-        let timer = setInterval(function() {
-          current += 0.3;
-          toChangeTranslate(current);
-          console.log(current, target);
-          if (current >= target) {
-            clearInterval(timer);
-          };
-        }, 1);
-      } else if (current > target) {
-        console.log(current, target);
-        let timer = setInterval(function() {
-          current -= 0.3;
-          toChangeTranslate(current);
-          console.log(current, target);
-          if (current <= target) {
-            clearInterval(timer);
-          };
-        }, 1);
-      };
-    }
-
-    function toChangeToCost1() {
-      let currentTranslate = parseFloat((document.querySelector('.slide5_item__fh').style.transform).slice(11, 16));
-      document.querySelector('.slide5_cost1').style.fontWeight = 'bold';
-      document.querySelector('.slide5_cost2').style.fontWeight = '';
-      document.querySelector('.slide5_cost3').style.fontWeight = '';
-      toMoveSlide(currentTranslate, 33, 3);
-    }
-
-    function toChangeToCost2() {
-      let currentTranslate = parseFloat((document.querySelector('.slide5_item__fh').style.transform).slice(11, 16));
-      document.querySelector('.slide5_cost1').style.fontWeight = '';
-      document.querySelector('.slide5_cost2').style.fontWeight = 'bold';
-      document.querySelector('.slide5_cost3').style.fontWeight = '';
-      toMoveSlide(currentTranslate, 0);
-    }
-
-    function toChangeToCost3() {
-      let currentTranslate = parseFloat((document.querySelector('.slide5_item__fh').style.transform).slice(11, 16));
-      document.querySelector('.slide5_cost1').style.fontWeight = '';
-      document.querySelector('.slide5_cost2').style.fontWeight = '';
-      document.querySelector('.slide5_cost3').style.fontWeight = 'bold';
-      toMoveSlide(currentTranslate, -33, 3);
-    }
-    console.log('CostSlider online!');
-  </script>
 </body>
 
 </html>
